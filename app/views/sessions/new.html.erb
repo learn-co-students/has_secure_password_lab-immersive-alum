@@ -1,0 +1,13 @@
+<h1>Welcome!</h1>
+
+<h3>Login</h3>
+
+<%= form_for(@user, url: login_path) do |f| %>
+  <%= f.label :username %>
+  <%= f.text_field :name %><br>
+  <%= f.label :password %>
+  <%= f.password_field :password %><br>
+  <%= f.submit :Login %>
+<%end%>
+
+<h5>Or click <%= link_to "here", signup_path %> to sign up!</h5>
